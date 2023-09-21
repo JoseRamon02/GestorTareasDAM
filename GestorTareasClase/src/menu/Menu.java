@@ -8,6 +8,7 @@ import claseTarea.Tarea;
 import featureCrear.CrearTarea;
 import featureEliminar.EliminarTareas;
 import featureListar.ListarTareas;
+import featureModificar.ModificarTarea;
 
 public class Menu {
 
@@ -47,7 +48,7 @@ public class Menu {
 	    		CrearTarea.crearTarea(listaTareas);
 	    break;
 	    case 3:
-	    		System.out.println("Aun estamos desarrollando el metodo para editar las tareas.\nDisculpen las molestias.");
+	    		ModificarTarea.Modificar(listaTareas);
 	    break;
 	    case 4:
 		     	EliminarTareas.eliminarTareas(listaTareas);
