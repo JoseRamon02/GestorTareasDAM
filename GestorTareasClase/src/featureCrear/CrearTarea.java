@@ -10,14 +10,14 @@ public class CrearTarea {
 	public static void crearTarea(ArrayList<Tarea> Crear) {
 		
 		
-		System.out.print("Escribe el titulo de la tarea: ");
+		System.out.print("Titulo de la tarea: ");
 		String Titulo = sc.nextLine();
 		
-		System.out.print("Escribe una breve descripcion de la tarea: ");
+		System.out.print("Breve descripcion: ");
 		String Descripcion = sc.nextLine();
 		
-		System.out.println("Escribe la fecha de la tarea: ");
-		System.out.print("Año: ");
+		System.out.println("Fecha de la tarea: ");
+		System.out.print("Anno: ");
 		int anyo = sc.nextInt();
 		System.out.print("Mes: ");
 		int mes = sc.nextInt();

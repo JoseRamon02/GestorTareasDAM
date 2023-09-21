@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import claseTarea.Tarea;
+import featureCrear.CrearTarea;
+import featureEliminar.EliminarTareas;
 import featureListar.ListarTareas;
 
 public class Menu {
@@ -42,19 +44,20 @@ public class Menu {
 	    		ListarTareas.listarTareas(listaTareas);
 	    break;
 	    case 2:
-	    		//crearTareas
+	    		CrearTarea.crearTarea(listaTareas);
 	    break;
 	    case 3:
-	    		//
+	    		System.out.println("Aun estamos desarrollando el metodo para editar las tareas.\nDisculpen las molestias.");
 	    break;
 	    case 4:
-		     
+		     	EliminarTareas.eliminarTareas(listaTareas);
 		break;
+	    case 0:
+	     	System.out.println("Hasta pronto!");
+	    break;
 	    default:
-	     // Default secuencia de sentencias.
-	  }
-		
-		ListarTareas.listarTareas(listaTareas);
+	    		System.out.println("Por favor, introduzca una opcion correcta.");
+			}
 		
 		}while(opcionUsuario!=0);
 		

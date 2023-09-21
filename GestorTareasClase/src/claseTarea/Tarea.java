@@ -6,9 +6,9 @@ public class Tarea {
 	
 	//atributos
 	
-	private String titulo;
-	private String descripcion;
-	private LocalDate fecha;
+	public String titulo;
+	public String descripcion;
+	public LocalDate fecha;
 	
 	
 	//getters y setters
