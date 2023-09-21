@@ -15,17 +15,18 @@ public class ModificarTarea {
 
 		System.out.print("Titulo de la tarea a modificar: ");
 		String elec = sc.nextLine();
+		int flag=0;
 		
 		for (Tarea tarea: modificar) {
 			if (tarea.titulo.equals(elec)) {
 				
-				System.out.print("Titulo de la tarea: ");
+				System.out.print("Nuevo titulo de la tarea: ");
 				tarea.titulo = sc.nextLine();
 				
-				System.out.print("Breve descripcion: ");
+				System.out.print("Nueva descripcion: ");
 				tarea.descripcion = sc.nextLine();
 				
-				System.out.println("Fecha de la tarea: ");
+				System.out.println("Nueva fecha de la tarea: ");
 				System.out.print("Anno: ");
 				int anyo = sc.nextInt();
 				System.out.print("Mes: ");
@@ -34,9 +35,10 @@ public class ModificarTarea {
 				int dia = sc.nextInt();
 
 				tarea.fecha = LocalDate.of(anyo, mes, dia);
-				
+				flag=1;
 			}
 		}
+		if (flag==0)System.out.println("Tarea no encontrada");
 		
 	}
 }
