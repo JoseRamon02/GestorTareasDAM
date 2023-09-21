@@ -42,13 +42,10 @@ public class Menu {
 	    		ListarTareas.listarTareas(listaTareas);
 	    break;
 	    case 2:
-	    
+	    		//crearTareas
 	    break;
-	    
-	    
-	     
 	    case 3:
-	     
+	    		//
 	    break;
 	    case 4:
 		     
